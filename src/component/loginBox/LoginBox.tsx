@@ -39,13 +39,10 @@ const LoginBox: React.FC = function () {
             <ShowTips.Consumer >
                 {
                     ({setTipsTexFN}) => {
-                        console.log(setTipsTexFN.toString())
                         return <button onClick={() => setTipsTexFN(US)} >登录</button>
                     }
 
                 }
-
-
             </ShowTips.Consumer>
         </form>
     )

@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-const ShowTips = createContext({setTipsTexFN:(text:string)=>{console.log(text)}})
+let ShowTips = createContext({setTipsTexFN:(text:string)=>{console.log(text)}})
 
 
 export default ShowTips
