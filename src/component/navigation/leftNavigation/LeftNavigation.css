@@ -1,0 +1,23 @@
+.Box-outside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    background-color: rgb(248, 245, 238, 0.219);
+    padding: 1em;
+    border-radius: 10px;
+    /* justify-content: space-between; */
+}
+
+.buttons {
+    width: 10em;
+    height: 3em;
+    background-color: rgb(250, 247, 243);
+    margin-bottom:  1em;
+    border-color: white;
+    border-radius: 1em;
+}
+
+.buttons :hover {
+    background-color: rgb(241, 141, 9);
+}

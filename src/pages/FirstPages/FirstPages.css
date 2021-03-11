@@ -1,0 +1,10 @@
+.maxBox{
+    display: flex;
+    flex-direction: row;
+}
+.leftNavigation{
+    height: "100%";
+    width: 11em;
+    margin-left: 0.1em;
+
+}

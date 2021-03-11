@@ -1,35 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import LoginBox from './component/loginBox/LoginBox'
-import ShowTips from './component/showTips/showTips'
-import { useState, useEffect } from 'react';
-function Bbb(props) {
-  const [isShowTips, setIsShowTips] = useState(false)
-  const [tipText, setTipText] = useState('')
-  const [showTipsFN, setShowTipsFN] = useState(() => { })
-  useEffect(() => {
-    setShowTipsFN(() => {
-      return async (tipTexts) => {
-        console.error(tipText)
-        await setTipText(tipTexts)
-        setIsShowTips(true)
-        console.log('===123', isShowTips, tipText)
-      }
-    }
-    )
-    return
-  }, [props])
+import toas from './component/toas';
+// import ShowTips from './component/showTips/showTips'
+// import { useState, useEffect, Component } from 'react';
+// import Router from './router';
+import FirstPages from './pages/FirstPages/FirstPages'
 
-  return (
-    <ShowTips.Provider value={{ setTipsTexFN: showTipsFN }}>
-       {
-        isShowTips && <p>{tipText}</p>
-      }
-      <LoginBox></LoginBox>
-    </ShowTips.Provider>
-  )
-
-}
+setTimeout(() => {
+  toas.loading()
+}, 3);
 
 function App(props) {
   console.log('reflsh')
@@ -37,15 +16,17 @@ function App(props) {
 
   return (
     <div className="App">
-     
-      <header className="App-header">
+      <toas></toas>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        {Bbb()}
-      </header>
+    
+      </header> */}
+      <FirstPages></FirstPages>
 
     </div>
   );
 }
+
 
 export default App;
