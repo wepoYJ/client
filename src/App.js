@@ -1,13 +1,12 @@
-// import logo from './logo.svg';
+
 import './App.css';
 import toas from './component/toas';
-// import ShowTips from './component/showTips/showTips'
-// import { useState, useEffect, Component } from 'react';
-// import Router from './router';
-import FirstPages from './pages/FirstPages/FirstPages'
 
+
+import FirstPages from './pages/FirstPages/FirstPages'
+import './publishCss.css'
 setTimeout(() => {
-  toas.loading()
+  toas.loading('loading',3000)
 }, 3);
 
 function App(props) {
@@ -17,11 +16,7 @@ function App(props) {
   return (
     <div className="App">
       <toas></toas>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-    
-      </header> */}
+   
       <FirstPages></FirstPages>
 
     </div>

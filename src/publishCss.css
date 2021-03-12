@@ -1,0 +1,39 @@
+.normalFont {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+
+.XFont {
+    margin: 0;
+    font-size:20px;
+    color: black;
+}
+.XlFont {
+    margin: 0;
+    font-size:22px;
+    color: black;
+    
+}
+.XXFont {
+    margin: 0;
+    font-size: 30px;
+    color: black;
+}
+
+.XXXFont {
+    margin: 0;
+    font-size: 40px;
+    color: black;
+}
+
+.outerMostBox {
+    width: 75em;
+    border-style: solid;
+    border-width: 2;
+    border-color: blue;
+}
+
+.outerSecondBox {
+    width: 75em;
+}
