@@ -1,10 +1,7 @@
 .App {
   width:75em;
-  border-style: solid;
-  border-width: 2;
-  border-color: blue;
   text-align: center;
-  background-color: rgba(248, 245, 238, 0.219);
+  background-color: transparent;
   display: flex;
   align-items: center;
 }

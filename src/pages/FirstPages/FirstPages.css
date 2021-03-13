@@ -1,10 +1,62 @@
-.maxBox{
-    display: flex;
-    flex-direction: row;
+.normalFont {
+  color: black;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
 }
-.leftNavigation{
-    height: "100%";
-    width: 11em;
-    margin-left: 0.1em;
-
+.normalFontHav {
+  color: black;
+  margin: 0;
+  font-size: 18;
+  font-weight: blod;
+}
+.XFont {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+.XlFont {
+  color: black;
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+.XXFont {
+  color: black;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+.XXXFont {
+  color: black;
+  margin: 0;
+  font-size: 40px;
+  font-weight: normal;
+}
+.outerMostBox {
+  width: 75em;
+}
+.outerSecondBox {
+  width: 75em;
+}
+.maxBox {
+  display: flex;
+  flex-direction: row;
+}
+.leftNavigation {
+  height: "100%";
+  width: 9em;
+  margin-left: 0.1em;
+  padding-left: 0.5em;
+}
+.bodyBox {
+  display: flex;
+  flex: 1;
+  margin: 0em 1em 0em 0em;
+  border-style: solid;
+  border-width: 1.5px;
+}
+.rightList {
+  width: 20em;
 }

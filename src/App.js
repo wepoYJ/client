@@ -1,12 +1,12 @@
 
 import './App.css';
-import toas from './component/toas';
+import Toas from './component/toas';
 
 
 import FirstPages from './pages/FirstPages/FirstPages'
 import './publishCss.css'
 setTimeout(() => {
-  toas.loading('loading',3000)
+  Toas.loading('loading',3000)
 }, 3);
 
 function App(props) {
@@ -15,7 +15,6 @@ function App(props) {
 
   return (
     <div className="App">
-      <toas></toas>
    
       <FirstPages></FirstPages>
 

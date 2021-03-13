@@ -3,7 +3,7 @@ import './LeftNavigation.css'
 import '../../../publishCss.css'
 import { useState, createContext, useContext } from 'react'
 
-const LeftSelectContext = createContext({ seleted: 0, setSeleteds: (num: number) => { } })
+const LeftSelectContext = createContext({ setSeleteds: (num: number) => { } })
 const leftNavigationText = [
     '热门',
     '头条',
@@ -16,14 +16,15 @@ const leftNavigationText = [
 ]
 
 
-function RenderButton(name: string, num: number, seleted: any) {
-    const { setSeleteds } = useContext(LeftSelectContext)
+function RenderButton(name: string, num: number, seleted: number,setSeleted:any) {
+   
+  
     return (
-        <button className="buttons" onClick={() => setSeleteds(num)} >
-            <p className="XFont" style={seleted == num ? { fontSize: 22, fontWeight: 'bold' } : {}}>
-                {name[0]}&nbsp;&nbsp;&nbsp;&nbsp;{name[1]}
-            </p>
-        </button>
+        <a key={num} className={seleted == num ? "buttons normalFontHav" : "buttons XFont"} onClick={() => {
+            setSeleted(num)
+        }} >
+            {name}
+        </a>
     )
 }
 
@@ -33,21 +34,15 @@ export default function LeftNavigation(props: any) {
 
     return (
         <LeftSelectContext.Provider value={{
-            seleted, setSeleteds: setSeleted
+            setSeleteds: setSeleted
         }} >
 
-            <div className="Box-outside">
+            <div className="Box-outside" id="nav">
+
                 {
-                    leftNavigationText.map((value: string, index: number) => RenderButton(value, index, seleted))
+                    leftNavigationText.map((value: string, index: number) => RenderButton(value, index, seleted,setSeleted))
                 }
 
-                {/* <button className="buttons"><p className="XFont" style={seleted == 1 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button>
-            <button className="buttons"><p className="XFont" style={seleted == 2 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button>
-            <button className="buttons"><p className="XFont" style={seleted == 3 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button>
-            <button className="buttons"><p className="XFont" style={seleted == 4 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button>
-            <button className="buttons"><p className="XFont" style={seleted == 5 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button>
-            <button className="buttons"><p className="XFont" style={seleted == 6 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button>
-            <button className="buttons"><p className="XFont" style={seleted == 7 ? { fontSize: 22, fontWeight: 'bold' } : {}}></p></button> */}
             </div>
         </LeftSelectContext.Provider >
 

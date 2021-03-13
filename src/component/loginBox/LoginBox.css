@@ -1,0 +1,64 @@
+.normalFont {
+  color: black;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+.normalFontHav {
+  color: black;
+  margin: 0;
+  font-size: 18;
+  font-weight: blod;
+}
+.XFont {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+.XlFont {
+  color: black;
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+.XXFont {
+  color: black;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+.XXXFont {
+  color: black;
+  margin: 0;
+  font-size: 40px;
+  font-weight: normal;
+}
+.outerMostBox {
+  width: 75em;
+}
+.outerSecondBox {
+  width: 75em;
+}
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1.5px;
+  background-color: #ececec8e;
+}
+.fontBox {
+  color: black;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  width: 90%;
+  height: 10em;
+}
