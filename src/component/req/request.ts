@@ -1,5 +1,4 @@
 // import { useModal } from 'react-use-modal'
-// import { Modal } from 'antd'
 import qs from "qs"
 // import toas from '../toas'
 import axios from 'axios'
