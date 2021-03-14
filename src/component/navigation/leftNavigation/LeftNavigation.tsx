@@ -1,7 +1,7 @@
 
 import './LeftNavigation.css'
 import '../../../publishCss.css'
-import { useState, createContext, useContext } from 'react'
+import { useState, createContext } from 'react'
 
 const LeftSelectContext = createContext({ setSeleteds: (num: number) => { } })
 const leftNavigationText = [
@@ -20,15 +20,15 @@ function RenderButton(name: string, num: number, seleted: number,setSeleted:any)
    
   
     return (
-        <a key={num} className={seleted == num ? "buttons normalFontHav" : "buttons XFont"} onClick={() => {
+        <button key={num}  className={seleted === num ? "normalFontHavW buttonsSelete" : "buttons XFont"} onClick={() => {
             setSeleted(num)
         }} >
             {name}
-        </a>
+        </button>
     )
 }
 
-export default function LeftNavigation(props: any) {
+export default function LeftNavigation() {
     const [seleted, setSeleted] = useState(0)
 
 

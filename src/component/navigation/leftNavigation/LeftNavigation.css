@@ -10,6 +10,12 @@
   font-size: 23px;
   font-weight: bolder;
 }
+.normalFontHavW {
+  color: #f53535;
+  margin: 0;
+  font-size: 23px;
+  font-weight: bolder;
+}
 .XFont {
   color: black;
   margin: 0;
@@ -56,11 +62,25 @@
   height: 2em;
   background-color: #ffffff;
   color: black;
+  border: none;
+  outline: none;
+}
+.buttonsSelete {
+  width: 100%;
+  height: 2em;
+  background-color: transparent;
+  color: #f09393;
+  border: none;
+  outline: none;
+  background: linear-gradient(130deg, #6ff133 0%, #f0f1e7 90%);
+  border-radius: 5px;
 }
 .buttons:hover {
   width: 100%;
   height: 2em;
   background-color: #fa2f2f;
   color: #ffffff;
+  border: none;
   margin: 0 10px;
+  outline: none;
 }

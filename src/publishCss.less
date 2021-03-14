@@ -1,5 +1,4 @@
-.fontStyle(@size, @color: black, @weith: normal) {
-    color: @color;
+.fontStyle(@size,  @weith: normal) {
     margin: 0;
     font-size: @size;
     font-weight: @weith
@@ -18,11 +17,14 @@
     justify-content: @ju;
     align-items: @al;
 }
-.borderLook() {
+.borderLook(@color:black) {
     border-style: solid;
     border-width: 1.5px;
+    border-color: @color;
 }
-
+.sFont{
+    .fontStyle(10px);
+}
 .normalFont {
     .fontStyle(18px);
 }
@@ -30,7 +32,12 @@
 .normalFontHav {
     .fontStyle(23px, @weith: bolder)
 }
+.normalFontHavW{
+    color: rgb(245, 53, 53);
 
+    .fontStyle(23px, @weith: bolder)
+
+}
 .XFont {
     .fontStyle(20px)
 }
@@ -53,4 +60,12 @@
 
 .outerSecondBox {
     width: 75em;
+}
+.smallIcon {
+    width: 15px;
+    height: 15px;
+}
+.XLIcon {
+    width: 20px;
+    height: 20px;
 }

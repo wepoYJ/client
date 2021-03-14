@@ -23,7 +23,7 @@ const notice = (type, content, duration = 2000, onClose) => {
     if (!notification) notification = createNotification()
     return notification.addNotice({ type, content, duration, onClose })
 }
-
+// eslint-disable-next-line
 export default {
     info(content, duration, onClose) {
         return notice('info', content, duration, onClose)
