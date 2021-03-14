@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./LoginBox.css"
+import { req_Post_Normal } from '../../net/request'
 // import './LoginBox.css'
-import { req_Post_Normal } from '../req/request'
 
 // interface loginText {
 //     US: string,
