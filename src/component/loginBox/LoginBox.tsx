@@ -1,26 +1,34 @@
+/*
+ * @Author: yangQi
+ * @LastEditors:  
+ * @Date: 2021-03-15 10:03:00
+ * @LastEditTime: 2021-03-17 17:51:26
+ * @Description:  
+ * @FilePath: /client/src/component/loginBox/LoginBox.tsx
+ */
 import React, { useState } from 'react'
 import "./LoginBox.css"
 import { req_Post_Normal } from '../../net/request'
 // import './LoginBox.css'
 
-// interface loginText {
-//     US: string,
-//     PS: string,
-// }
 
-const clickLogin = (US: string, PS: string) => {
-    console.log(US,PS)
-    req_Post_Normal('/usr/login', {
+
+const clickLogin = async (US: string, PS: string) => {
+    console.log(US, PS)
+    const result = await req_Post_Normal('/usr/login', {
         email: US,
         password: PS
     })
-        .then((res) => {
-          console.log(res)
-        })
-        .catch((e)=>{
-            console.log(e)
-        })
-        
+    console.log(result)
+}
+
+const clickReg = async (US: string, PS: string): Promise<void> => {
+    const result = await req_Post_Normal('/usr/reg', {
+        email: US,
+        password: PS
+    })
+    console.log(result)
+    alert('reg success')
 }
 
 // eslint-disable-next-line
@@ -28,16 +36,19 @@ const LoginBox: React.FC = function () {
     const [US, updateUS] = useState<string>('')
     const [PS, updatePS] = useState<string>('')
     // const { setTipsTexFN }=useContext(ShowTips)
-
+    const [isLogin, setIsLogin] = useState<boolean>(true)
     return (
         <div className="loginBox">
-
+            <div className="reg_Login_Box">
+                <a href="/#" onClick={() => setIsLogin(true)} className={!isLogin ? "login" : 'login1'}>登录</a>
+                <a href="/#" onClick={() => setIsLogin(false)} className={isLogin ? "login" : 'login1'}>注册</a>
+            </div>
             <form className="fontBox">
                 <div className="fontRow">
                     <div className="iconBox">
                         <img src="assets/icon/userName.png" alt="Us" className="smallIcon" ></img>
                     </div>
-                    <input type="text" className="fontInput" placeholder="邮箱号" value={US} onChange={(event) => updateUS(event.target.value)} ></input>
+                    <input type="text" className="fontInput" placeholder="wepo号" value={US} onChange={(event) => updateUS(event.target.value)} ></input>
                 </div>
                 <div className="fontRow">
                     <div className="iconBox">
@@ -46,7 +57,7 @@ const LoginBox: React.FC = function () {
                     <input type="text" className="fontInput" placeholder="登录密码" value={PS} onChange={(event) => updatePS(event.target.value)}></input>
                 </div>
 
-                <a href="/#" onClick={() => clickLogin(US, PS)} >登录</a>
+                <a href="/#" className="sure" onClick={() => isLogin ? clickLogin(US, PS) : clickReg(US, PS)} >{isLogin ? "登录" : "注册"}</a>
 
             </form>
         </div>

@@ -1,3 +1,11 @@
+/*
+ * @Author: yangQi
+ * @LastEditors:  
+ * @Date: 2021-03-15 10:03:00
+ * @LastEditTime: 2021-03-17 16:15:21
+ * @Description:  
+ * @FilePath: /client/src/net/request.ts
+ */
 // import { useModal } from 'react-use-modal'
 // import { Modal } from 'antd'
 import qs from "qs"
@@ -15,7 +23,8 @@ let token: string = ''
 let axiosClient = axios.create({
     baseURL: host,
     headers: {
-        
+        token:token,
+        'Content-Type': 'application/x-www-form-urlencoded'
     }
 })
 
@@ -23,10 +32,10 @@ const req_Post_Normal = async function <T> (url: string, data: any): Promise<T |
     let resp
     try {
         resp = await axiosClient.post(url, qs.stringify(data), {})
-        if (resp.status== 200) {
+        if (resp.status=== 200) {
             let { code, msg, data } = resp.data as reqReturn<T>
             
-            if (code == 0) {
+            if (code === 0) {
                 // 成功
                 return Promise.resolve(data)
             } else {

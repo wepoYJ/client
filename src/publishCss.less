@@ -3,7 +3,11 @@
     font-size: @size;
     font-weight: @weith
 }
-
+.borderBottom(@color:white,@width:1px){
+    border-bottom: @color;
+    border:0px 0px @width 0px;
+    border-style:none none solid none;
+}
 .flexStyleRow(@al:center,@ju:flex-start) {
     display: flex;
     flex-direction: row;
