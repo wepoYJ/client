@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-17 17:51:26
+ * @LastEditTime: 2021-03-18 09:42:21
  * @Description:  
  * @FilePath: /client/src/component/loginBox/LoginBox.tsx
  */
@@ -15,7 +15,7 @@ import { req_Post_Normal } from '../../net/request'
 
 const clickLogin = async (US: string, PS: string) => {
     console.log(US, PS)
-    const result = await req_Post_Normal('/usr/login', {
+    const result = await req_Post_Normal('usr/login', {
         email: US,
         password: PS
     })
@@ -23,7 +23,7 @@ const clickLogin = async (US: string, PS: string) => {
 }
 
 const clickReg = async (US: string, PS: string): Promise<void> => {
-    const result = await req_Post_Normal('/usr/reg', {
+    const result = await req_Post_Normal('usr/reg', {
         email: US,
         password: PS
     })

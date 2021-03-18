@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-17 16:15:21
+ * @LastEditTime: 2021-03-18 09:49:35
  * @Description:  
  * @FilePath: /client/src/net/request.ts
  */
@@ -17,7 +17,7 @@ interface reqReturn<T> {
     data: T
 }
 
-const host: string = 'http://8.136.4.252:5000/'
+const host: string = 'http://8.136.4.252:3000/'
 let token: string = ''
 
 // let axiosClient = axios.create({
@@ -54,7 +54,7 @@ const req_Post_Normal = async function <T>(url: string, data: any): Promise<stri
         fetch(host + url, {
             headers: {
                 token: token,
-                'content-type': 'application/json'
+                'content-type': 'application/x-www-form-urlencoded'
             },
             body: qs.stringify(data),
             method: "POST",
