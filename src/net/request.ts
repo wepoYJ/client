@@ -2,13 +2,13 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-18 09:49:35
+ * @LastEditTime: 2021-03-18 14:09:10
  * @Description:  
  * @FilePath: /client/src/net/request.ts
  */
 // import { useModal } from 'react-use-modal'
 // import { Modal } from 'antd'
-import qs from "qs"
+// import qs from "qs"
 // import toas from '../toas'
 // import axios from 'axios'
 interface reqReturn<T> {
@@ -54,11 +54,11 @@ const req_Post_Normal = async function <T>(url: string, data: any): Promise<stri
         fetch(host + url, {
             headers: {
                 token: token,
-                'content-type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json'
             },
-            body: qs.stringify(data),
+            body: JSON.stringify(data),
             method: "POST",
-            mode:'no-cors',
+            mode: 'no-cors',
             cache: 'no-cache',
         })
             .then((res) => {
