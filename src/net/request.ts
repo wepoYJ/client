@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-18 14:09:10
+ * @LastEditTime: 2021-03-19 10:27:32
  * @Description:  
  * @FilePath: /client/src/net/request.ts
  */
@@ -54,7 +54,9 @@ const req_Post_Normal = async function <T>(url: string, data: any): Promise<stri
         fetch(host + url, {
             headers: {
                 token: token,
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/x-www-form-urlencoded',
+                "Access-Control-Allow-Origin": "*",
+                "accept": "*/*"
             },
             body: JSON.stringify(data),
             method: "POST",
