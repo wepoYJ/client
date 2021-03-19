@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-19 10:27:32
+ * @LastEditTime: 2021-03-19 13:32:57
  * @Description:  
  * @FilePath: /client/src/net/request.ts
  */
@@ -28,10 +28,10 @@ let axiosClient = axios.create({
     }
 })
 
-const req_Post_Normal = async function <T>(url: string, data: any): Promise<any> {
+const req_Post_Normal = async function <T>(url: string, datasend: any): Promise<any> {
     let resp
     try {
-        let formdata = qs.stringify(data)
+        let formdata = qs.stringify(datasend)
         resp = await axiosClient.request({
             url,
             data: formdata,
