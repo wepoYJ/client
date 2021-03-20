@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-18 17:24:25
+ * @LastEditTime: 2021-03-20 11:30:18
  * @Description:  
  * @FilePath: /client/src/pages/FirstPages/FirstPages.tsx
  */
@@ -12,7 +12,9 @@ import './FirstPages.css'
 import '../../publishCss.css'
 import TopNavigation from '../../component/navigation/topNavigation/TopNavigation'
 import React from 'react'
-import Swipera from '../../component/Swipera'
+import Swipers from '../../component/Swipers'
+// import Swipera from '../../component/Swipera'
+// import Slider from '../../component/Slider/index'
 export default function FistPages() {
     document.title = "WEPO 首页"
     return (
@@ -29,7 +31,9 @@ export default function FistPages() {
 
                 <div className="bodyBox">
                     <div className="swipeo">
-                        <Swipera></Swipera>
+                        {/* <Slider></Slider> */}
+                        {/* <Swipera></Swipera> */}
+                        <Swipers></Swipers>
                     </div>
 
                 </div>

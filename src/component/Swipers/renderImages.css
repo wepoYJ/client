@@ -1,0 +1,14 @@
+.bigDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.halfImage {
+  display: flex;
+  flex: 1;
+}
+.rightC {
+  width: 20%;
+  height: 100%;
+}
