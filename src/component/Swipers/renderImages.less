@@ -1,15 +1,66 @@
-
+@import '../../publishCss.less';
 .bigDiv{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
+    width: 75em;
+    height: 15em;
+}
+.oneImage{
+    width: 70em;
+    height: 15em;
 }
 .halfImage{
-    display: flex;
-    flex: 1;
+    width: 32.5em;
+    height: 15em;
+}
+.leftC{
+    width:100%;
+    height: 15em;
+}
+.left{
+    width:70%;
+    height: 15em;
 }
 .rightC{
-    width: 20%;
-    height: 100%;
+    width: 98%;
+    height: 48%;
+}
+.rightImg{
+    width: 100%;
+    height: 7.3em;
+}
+.right{
+    margin-top: -0.2em;
+    width: 40%;
+    height: 15em;
+    .flexStyleClum(@ju:space-between)
+}
+
+.titleNormal(@width:60em,@bo:0){
+    position: absolute;
+    z-index: 9;
+    bottom:  @bo;
+    width: @width;
+    color: white;
+    text-align: center;
+}
+.title{
+    .titleNormal()
+}
+.halfTitle{
+    .titleNormal(30em)
+}
+.leftTitle{
+    .titleNormal(70%)
+}
+.rightTitle{
+    .titleNormal(20em)
+}
+.rightTitleT{
+    .titleNormal(20em,7.5em)
+}
+.abox{
+    width: auto;
+    .borderLook(blue);
+    height: auto;
 }

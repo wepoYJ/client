@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-20 11:30:18
+ * @LastEditTime: 2021-03-20 16:54:17
  * @Description:  
  * @FilePath: /client/src/pages/FirstPages/FirstPages.tsx
  */
@@ -25,7 +25,6 @@ export default function FistPages() {
             </header>
             <div className="maxBox" >
                 <div className="leftNavigation">
-
                     <LeftNavigation></LeftNavigation>
                 </div>
 

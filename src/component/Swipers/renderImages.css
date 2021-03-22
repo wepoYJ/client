@@ -1,14 +1,141 @@
+.sFont {
+  margin: 0;
+  font-size: 10px;
+  font-weight: normal;
+}
+.normalFont {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+.normalFontHav {
+  margin: 0;
+  font-size: 23px;
+  font-weight: bolder;
+}
+.normalFontHavW {
+  color: #f53535;
+  margin: 0;
+  font-size: 23px;
+  font-weight: bolder;
+}
+.XFont {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+.XlFont {
+  margin: 0;
+  font-size: 25px;
+  font-weight: normal;
+}
+.XXFont {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+.XXXFont {
+  margin: 0;
+  font-size: 40px;
+  font-weight: normal;
+}
+.outerMostBox {
+  width: 75em;
+}
+.outerSecondBox {
+  width: 75em;
+}
+.smallIcon {
+  width: 15px;
+  height: 15px;
+}
+.XLIcon {
+  width: 20px;
+  height: 20px;
+}
 .bigDiv {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
+  width: 75em;
+  height: 15em;
+}
+.oneImage {
+  width: 70em;
+  height: 15em;
 }
 .halfImage {
-  display: flex;
-  flex: 1;
+  width: 32.5em;
+  height: 15em;
+}
+.leftC {
+  width: 100%;
+  height: 15em;
+}
+.left {
+  width: 70%;
+  height: 15em;
 }
 .rightC {
-  width: 20%;
-  height: 100%;
+  width: 98%;
+  height: 48%;
+}
+.rightImg {
+  width: 100%;
+  height: 7.3em;
+}
+.right {
+  margin-top: -0.2em;
+  width: 40%;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 60em;
+  color: white;
+  text-align: center;
+}
+.halfTitle {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 30em;
+  color: white;
+  text-align: center;
+}
+.leftTitle {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+.rightTitle {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 20em;
+  color: white;
+  text-align: center;
+}
+.rightTitleT {
+  position: absolute;
+  z-index: 9;
+  bottom: 7.5em;
+  width: 20em;
+  color: white;
+  text-align: center;
+}
+.abox {
+  width: auto;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: blue;
+  height: auto;
 }
