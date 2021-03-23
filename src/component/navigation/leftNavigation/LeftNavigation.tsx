@@ -1,7 +1,15 @@
+/*
+ * @Author: yangQi
+ * @LastEditors:  
+ * @Date: 2021-03-15 10:03:00
+ * @LastEditTime: 2021-03-23 14:26:06
+ * @Description:  
+ * @FilePath: /client/src/component/navigation/leftNavigation/LeftNavigation.tsx
+ */
 
 import './LeftNavigation.css'
 import '../../../publishCss.css'
-import { useState, createContext } from 'react'
+import React,{ useState, createContext } from 'react'
 
 const LeftSelectContext = createContext({ setSeleteds: (num: number) => { } })
 const leftNavigationText = [

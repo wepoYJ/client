@@ -59,31 +59,39 @@
   width: 75em;
   height: 15em;
 }
-.oneImage {
-  width: 70em;
-  height: 15em;
-}
-.halfImage {
+.bigDiv .halfImage {
   width: 32.5em;
   height: 15em;
 }
-.leftC {
-  width: 100%;
-  height: 15em;
+.bigDiv .title {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 60em;
+  color: white;
+  text-align: center;
 }
-.left {
+.bigDiv .left {
   width: 70%;
   height: 15em;
 }
-.rightC {
-  width: 98%;
-  height: 48%;
+.bigDiv .left .oneImage {
+  width: 70em;
+  height: 15em;
 }
-.rightImg {
+.bigDiv .left .leftC {
   width: 100%;
-  height: 7.3em;
+  height: 15em;
 }
-.right {
+.bigDiv .left .leftTitle {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+.bigDiv .right {
   margin-top: -0.2em;
   width: 40%;
   height: 15em;
@@ -92,31 +100,15 @@
   justify-content: space-between;
   align-items: center;
 }
-.title {
-  position: absolute;
-  z-index: 9;
-  bottom: 0;
-  width: 60em;
-  color: white;
-  text-align: center;
+.bigDiv .right .rightC {
+  width: 98%;
+  height: 48%;
 }
-.halfTitle {
-  position: absolute;
-  z-index: 9;
-  bottom: 0;
-  width: 30em;
-  color: white;
-  text-align: center;
+.bigDiv .right .rightC .rightImg {
+  width: 100%;
+  height: 7.3em;
 }
-.leftTitle {
-  position: absolute;
-  z-index: 9;
-  bottom: 0;
-  width: 70%;
-  color: white;
-  text-align: center;
-}
-.rightTitle {
+.bigDiv .right .rightC .rightTitle {
   position: absolute;
   z-index: 9;
   bottom: 0;
@@ -124,7 +116,7 @@
   color: white;
   text-align: center;
 }
-.rightTitleT {
+.bigDiv .right .rightC .rightTitleT {
   position: absolute;
   z-index: 9;
   bottom: 7.5em;
@@ -132,10 +124,11 @@
   color: white;
   text-align: center;
 }
-.abox {
-  width: auto;
-  border-style: solid;
-  border-width: 1.5px;
-  border-color: blue;
-  height: auto;
+.title {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 60em;
+  color: white;
+  text-align: center;
 }

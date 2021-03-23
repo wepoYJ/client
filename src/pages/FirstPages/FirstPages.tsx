@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-15 10:03:00
- * @LastEditTime: 2021-03-20 16:54:17
+ * @LastEditTime: 2021-03-23 14:44:51
  * @Description:  
  * @FilePath: /client/src/pages/FirstPages/FirstPages.tsx
  */
@@ -13,6 +13,7 @@ import '../../publishCss.css'
 import TopNavigation from '../../component/navigation/topNavigation/TopNavigation'
 import React from 'react'
 import Swipers from '../../component/Swipers'
+import LImgPost from '../../component/post/LImgPost'
 // import Swipera from '../../component/Swipera'
 // import Slider from '../../component/Slider/index'
 export default function FistPages() {
@@ -23,7 +24,7 @@ export default function FistPages() {
                 <title >wepo</title>
                 <TopNavigation></TopNavigation>
             </header>
-            <div className="maxBox" >
+            <div className="FistPagesmaxBox" >
                 <div className="leftNavigation">
                     <LeftNavigation></LeftNavigation>
                 </div>
@@ -33,6 +34,10 @@ export default function FistPages() {
                         {/* <Slider></Slider> */}
                         {/* <Swipera></Swipera> */}
                         <Swipers></Swipers>
+                    </div>
+                    <div>
+                        <LImgPost></LImgPost>
+
                     </div>
 
                 </div>

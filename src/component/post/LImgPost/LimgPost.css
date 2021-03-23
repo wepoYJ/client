@@ -53,30 +53,40 @@
   width: 20px;
   height: 20px;
 }
-.FistPagesmaxBox {
+.LimgPostBox {
+  width: 50em;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: black;
+  height: 15em;
   display: flex;
   flex-direction: row;
-  width: 75em;
-}
-.FistPagesmaxBox .leftNavigation {
-  height: "100%";
-  width: 9em;
-  margin-left: 0.1em;
-  padding-left: 0.5em;
-}
-.FistPagesmaxBox .bodyBox {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  flex: 1;
-  margin: 0 1em;
-  width: 50em;
+  align-items: flex-start;
 }
-.FistPagesmaxBox .bodyBox .swipeo {
+.LimgPostBox .imgBox {
+  width: 40%;
+  height: 100%;
+}
+.LimgPostBox .imgBox .img {
   width: 100%;
-  height: 15em;
+  height: 100%;
 }
-.FistPagesmaxBox .rightList {
-  width: 20em;
+.LimgPostBox .textBox {
+  width: 60%;
+  text-align: left;
+  height: 50%;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: black;
+}
+.LimgPostBox .textBox .leftPostTitles {
+  color: #eb7350;
+  position: static;
 }

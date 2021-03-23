@@ -1,40 +1,4 @@
 @import '../../publishCss.less';
-.bigDiv{
-    display: flex;
-    flex-direction: row;
-    width: 75em;
-    height: 15em;
-}
-.oneImage{
-    width: 70em;
-    height: 15em;
-}
-.halfImage{
-    width: 32.5em;
-    height: 15em;
-}
-.leftC{
-    width:100%;
-    height: 15em;
-}
-.left{
-    width:70%;
-    height: 15em;
-}
-.rightC{
-    width: 98%;
-    height: 48%;
-}
-.rightImg{
-    width: 100%;
-    height: 7.3em;
-}
-.right{
-    margin-top: -0.2em;
-    width: 40%;
-    height: 15em;
-    .flexStyleClum(@ju:space-between)
-}
 
 .titleNormal(@width:60em,@bo:0){
     position: absolute;
@@ -44,23 +8,56 @@
     color: white;
     text-align: center;
 }
+.bigDiv{
+    display: flex;
+    flex-direction: row;
+    width: 75em;
+    height: 15em;
+    .halfImage{
+        width: 32.5em;
+        height: 15em;
+    }
+    .title{
+        .titleNormal()
+    }
+    .left{
+        width:70%;
+        height: 15em;
+        .oneImage{
+            width: 70em;
+            height: 15em;
+        }
+        
+        .leftC{
+            width:100%;
+            height: 15em;
+        };
+        .leftTitle{
+            .titleNormal(70%)
+        }
+    }
+    .right{
+        margin-top: -0.2em;
+        width: 40%;
+        height: 15em;
+        .flexStyleClum(@ju:space-between);
+        .rightC{
+            width: 98%;
+            height: 48%;
+            .rightImg{
+                width: 100%;
+                height: 7.3em;
+            }
+            .rightTitle{
+                .titleNormal(20em)
+            }
+            .rightTitleT{
+                .titleNormal(20em,7.5em)
+            }
+        }
+    }
+    
+}
 .title{
     .titleNormal()
-}
-.halfTitle{
-    .titleNormal(30em)
-}
-.leftTitle{
-    .titleNormal(70%)
-}
-.rightTitle{
-    .titleNormal(20em)
-}
-.rightTitleT{
-    .titleNormal(20em,7.5em)
-}
-.abox{
-    width: auto;
-    .borderLook(blue);
-    height: auto;
 }

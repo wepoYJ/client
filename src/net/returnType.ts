@@ -2,7 +2,7 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-20 17:10:59
- * @LastEditTime: 2021-03-22 09:31:40
+ * @LastEditTime: 2021-03-23 14:45:32
  * @Description:  
  * @FilePath: /client/src/net/returnType.ts
  */
@@ -10,6 +10,7 @@ type userId = number
 type url = string
 type contentText = string
 type nickName = string
+type ObjectId=number
 export type personInfo_Dot = {
     nickName: nickName
     avatar: url
@@ -43,3 +44,10 @@ export interface creatTieZi_Dot {
     atPerson: Array<userId> | null
 }
 export interface login_Dot { }
+export interface AtInfo {
+    un: string
+    id: ObjectId
+}
+export interface Comment {
+    uid: ObjectId
+}

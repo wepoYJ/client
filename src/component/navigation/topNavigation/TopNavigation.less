@@ -1,6 +1,15 @@
 
 @import "../../../publishCss.less";
 
+.findBoxStyle() {
+    border:none;
+    outline:medium;
+    height: 1.5em;
+    width: 15em;
+    background-color: transparent;
+    font-size: 18px;
+    // border: 1px solid black;
+}
 
 .topNavigation {
     width: 100%;
@@ -11,25 +20,47 @@
     padding-left: 2em;
     box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.3), 0 0 6px 2px rgba(0, 0, 0, 0.274);
     margin-bottom: 1em;
-}
-.findBigBox{
-    margin-left: 5em;
-    height: 2em;
-    .flexStyleRow();
-    background-color: #f2f2f5;
-}
-.findBoxStyle() {
-    border:none;
-    outline:medium;
-    height: 1.5em;
 
-    background-color: transparent;
+    .findBigBox{
+        margin-left: 3em;
+        height: 2em;
+        .flexStyleRow();
+        background-color: #f2f2f5;
+        .findBox {
+            .findBoxStyle()
+        };
+        .findIcon{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            
+        };
+        .findBox:focus {
+            .findBoxStyle()
+        }
+    }
+    .navigations{
+        margin-left: 10em;
+        .flexStyleRow();
+        .topA_DIV{
+            color: black;
+            .flexStyleRow();
+            height: 3em;
+            width: 5em;
+            text-decoration: none;
+            .findIcon{
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                
+            };
+        }
+        
+    }
+
+
 }
 
-.findBox {
-    .findBoxStyle()
-}
 
-.findBox:focus {
-    .findBoxStyle()
-}
+
+

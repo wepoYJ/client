@@ -1,35 +1,40 @@
+.sFont {
+  margin: 0;
+  font-size: 10px;
+  font-weight: normal;
+}
 .normalFont {
-  color: black;
   margin: 0;
   font-size: 18px;
   font-weight: normal;
 }
 .normalFontHav {
-  color: black;
   margin: 0;
-  font-size: 18;
-  font-weight: blod;
+  font-size: 23px;
+  font-weight: bolder;
+}
+.normalFontHavW {
+  color: #f53535;
+  margin: 0;
+  font-size: 23px;
+  font-weight: bolder;
 }
 .XFont {
-  color: black;
   margin: 0;
   font-size: 20px;
   font-weight: normal;
 }
 .XlFont {
-  color: black;
   margin: 0;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: normal;
 }
 .XXFont {
-  color: black;
   margin: 0;
   font-size: 30px;
   font-weight: normal;
 }
 .XXXFont {
-  color: black;
   margin: 0;
   font-size: 40px;
   font-weight: normal;
@@ -40,6 +45,14 @@
 .outerSecondBox {
   width: 75em;
 }
+.smallIcon {
+  width: 15px;
+  height: 15px;
+}
+.XLIcon {
+  width: 20px;
+  height: 20px;
+}
 .topNavigation {
   width: 100%;
   height: 3em;
@@ -47,28 +60,61 @@
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 2em;
   box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.3), 0 0 6px 2px rgba(0, 0, 0, 0.274);
   margin-bottom: 1em;
 }
-.findBigBox {
-  margin-left: 5em;
+.topNavigation .findBigBox {
+  margin-left: 3em;
   height: 2em;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f2f2f5;
 }
-.findBox {
+.topNavigation .findBigBox .findBox {
   border: none;
   outline: medium;
   height: 1.5em;
+  width: 15em;
   background-color: transparent;
+  font-size: 18px;
 }
-.findBox:focus {
+.topNavigation .findBigBox .findIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.topNavigation .findBigBox .findBox:focus {
   border: none;
   outline: medium;
   height: 1.5em;
+  width: 15em;
   background-color: transparent;
+  font-size: 18px;
+}
+.topNavigation .navigations {
+  margin-left: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.topNavigation .navigations .topA_DIV {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3em;
+  width: 5em;
+  text-decoration: none;
+}
+.topNavigation .navigations .topA_DIV .findIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
