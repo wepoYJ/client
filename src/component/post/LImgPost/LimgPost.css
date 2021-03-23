@@ -74,19 +74,24 @@
 }
 .LimgPostBox .textBox {
   width: 60%;
+  height: 100%;
   text-align: left;
+  text-decoration: none;
+}
+.LimgPostBox .textBox .textcontent {
   height: 50%;
+  text-align: left;
+  overflow: hidden;
   text-decoration: none;
   color: black;
   display: -webkit-box;
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   border-style: solid;
   border-width: 1.5px;
   border-color: black;
 }
-.LimgPostBox .textBox .leftPostTitles {
+.LimgPostBox .textBox .textcontent .leftPostTitles {
   color: #eb7350;
   position: static;
 }

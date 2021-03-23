@@ -2,19 +2,20 @@
  * @Author: yangQi
  * @LastEditors:  
  * @Date: 2021-03-23 16:33:34
- * @LastEditTime: 2021-03-23 17:05:04
+ * @LastEditTime: 2021-03-23 17:36:06
  * @Description:  
- * @FilePath: /client/src/component/post/CreatPerson/index.tsx
+ * @FilePath: /client/src/component/post/Publisher/index.tsx
  */
 import React from 'react'
 import { formatDate } from '../../../util/timeFNC'
 import './index.css'
-export default function postCreatPerson(props: postType.Publisher): JSX.Element {
+export default function Publisher(props: postType.Publisher): JSX.Element {
+    
     let publishTime = formatDate(props.creatTime)
     return (
         <div className="Publisher" >
-            <img src={props.avatar} alt="head" className="" />&nbsp;
-            <a href="/#" >
+            <img src={props.avatar} alt="head" className="img" />&nbsp;
+            <a href="/#" className="abox" >
                 <span className="text">{props.nickName}</span></a>
             &nbsp; <span className="text">{publishTime}</span>
 

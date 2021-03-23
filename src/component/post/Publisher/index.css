@@ -60,7 +60,18 @@
   align-items: center;
   width: 200px;
 }
+.Publisher .img {
+  width: 23px;
+  height: 23px;
+  border-radius: 100px;
+}
+.Publisher .abox {
+  color: #808080;
+  text-decoration: none;
+  border: none;
+}
 .Publisher .text {
   color: #808080;
   text-decoration: none;
+  border: none;
 }
