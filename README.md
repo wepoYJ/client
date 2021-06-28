@@ -1,6 +1,5 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+当前项目已经停滞，未来可能会继续进行
 
 ## wepo
 
